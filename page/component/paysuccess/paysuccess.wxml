@@ -1,0 +1,25 @@
+<!-- page/component/paysuccess/paysuccess.wxml -->
+<view>
+  <!-- 中部标题 -->
+  <view class="success-title">
+    <text class="title-text">支付成功</text>
+  </view>
+
+  <!-- 订单详情区域 -->
+  <view class="order-details">
+    <view class="detail-row">
+      <text class="detail-label">订单编号：</text>
+      <text class="detail-value">1234567890</text>
+    </view>
+    <view class="detail-row">
+      <text class="detail-label">商品名称：</text>
+      <text class="detail-value">商品A</text>
+    </view>
+    <view class="detail-row">
+      <text class="detail-label">支付金额：</text>
+      <text class="detail-value highlight">¥128.00</text>
+    </view>
+    <button class="view-order-btn" bindtap="handleViewOrder">查看订单详情</button>
+  </view>
+
+</view>

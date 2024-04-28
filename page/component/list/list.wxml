@@ -1,0 +1,29 @@
+<view class="main">
+    <view class="banner">
+        <image src="/image/xsms-2.png"></image>
+    </view>
+
+    <view class="list-box">
+        <view class="newest-list">
+            <navigator url="../details/details">
+                <image src="/image/bale.png"></image>
+                <view class="newest-text"><text>树熟软心红芭乐 500g</text></view>
+                <view class="newest-text"><text>￥ 13.9</text></view>
+            </navigator>
+        </view>
+        <view class="newest-list">
+            <navigator url="../details/details">
+                <image src="/image/lizi.png"></image>
+                <view class="newest-text"><text>正宗蒲城酥梨 1500g</text></view>
+                <view class="newest-text"><text>￥ 12.7</text></view>
+            </navigator>
+        </view>
+        <view class="newest-list">
+            <navigator url="../details/details">
+                <image src="/image/ganju.png"></image>
+                <view class="newest-text"><text>新鲜柑橘 1500g</text></view>
+                <view class="newest-text"><text>￥ 20.5</text></view>
+            </navigator>
+        </view>
+    </view>
+</view>
