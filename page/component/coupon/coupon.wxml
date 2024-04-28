@@ -1,0 +1,10 @@
+<view class="main">
+    <view class="list-box">
+        <view wx:for="{{couponList}}" wx:key="index" class="newest-list">
+          <image src="/image/coupon.png"></image>
+          <view class="newest-text"><text>{{item.totalMoney}}元优惠券</text></view>
+          <view class="fontStyle"><text>满{{item.maxMoney}}元使用</text></view>
+          <button bindtap="payOrders"  data-args="{{ item }}">{{ item.isGet ? '已领取' : '领取' }}</button>
+        </view>
+    </view>
+</view>

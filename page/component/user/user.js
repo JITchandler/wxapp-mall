@@ -12,42 +12,39 @@ Page({
     /**
      * 获取用户信息
      */
-    wx.getUserInfo({
-      success: function(res){
-        self.setData({
-          thumb: res.userInfo.avatarUrl,
-          nickname: res.userInfo.nickName
-        })
-      }
-    }),
+    // wx.getUserInfo({
+    //   success: function(res){
+    //     self.setData({
+    //       thumb: res.userInfo.avatarUrl,
+    //       nickname: res.userInfo.nickName
+    //     })
+    //   }
+    // }),
 
     /**
      * 发起请求获取订单列表信息
      */
     wx.request({
-      url: 'http://www.gdfengshuo.com/api/wx/orders.txt',
+      url: '/',
       success(res){
         self.setData({
           orders: res.data
         })
       }
     })
-  },
-  onShow(){
-    var self = this;
-    /**
-     * 获取本地缓存 地址信息
-     */
-    wx.getStorage({
-      key: 'address',
+
+    wx.getUserInfo({
       success: function(res){
+        let userInfo = wx.getStorageSync('userInfo') || {};
         self.setData({
-          hasAddress: true,
-          address: res.data
-        })
+          thumb: userInfo.avatarUrl || res.userInfo.avatarUrl,
+          nickname: userInfo.nickName || res.userInfo.nickName
+        });
       }
-    })
+    });
+    
   },
+
   /**
    * 发起支付请求
    */

@@ -10,7 +10,9 @@
     "page/component/list/list",
     "page/component/search/search",
     "page/component/paysuccess/paysuccess",
-    "page/component/login/login"
+    "page/component/login/login",
+    "page/component/coupon/coupon"
+
 
   
   ],

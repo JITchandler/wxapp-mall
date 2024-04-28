@@ -23,13 +23,13 @@
                 </navigator>
             </view>
             <view class="select-top-small">
-                <navigator url="list/list">
-                    <image src="/image/s2.png"></image>
+                <navigator url="coupon/coupon">
+                    <image src="/image/coupon1.jpg"></image>
                 </navigator>
             </view>
         </view>
         <view class="select-bottom">
-            <navigator url="list/list">
+            <navigator url="/">
                 <image src="/image/s3.png"></image>
             </navigator>
         </view>
